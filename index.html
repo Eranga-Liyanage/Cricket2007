@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket CG</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<h1>Cricket CG</h1>
+
+<button onclick="Fade()">Fade</button> 
+
+
+
+<script>
+
+function Fade() {
+    fetch("http://127.0.0.1:8088/api/?Function=Cut&Duration=0")
+        .then(response => console.log("Executed"))
+        .catch(error => console.error("Error:", error));
+}
+
+</script>
+<body>
+
+
+</body>
+</html>
