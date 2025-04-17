@@ -12,7 +12,7 @@
 
 <button onclick="Fade()">Fade</button> 
 
-
+<button onclick="ChangeName()">ChangeName</button> 
 
 <script>
 
@@ -20,6 +20,10 @@ function Fade() {
     fetch("http://127.0.0.1:8088/api/?Function=Cut&Duration=0")
         .then(response => console.log("Executed"))
         .catch(error => console.error("Error:", error));
+
+    
+function ChangeName() {
+  document.getElementById("ChangeName").innerHTML = "<h1>Hello World</h1>";
 }
 
 </script>
